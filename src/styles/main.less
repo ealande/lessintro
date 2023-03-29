@@ -1,7 +1,15 @@
 @import 'variables.less';
 @breakpointTablet: ~"(min-width:768px) and (max-width: 1023px)";
 @breakpointMobile: ~"(max-width: 767px)";
-
+.marginBottom8{
+    margin-bottom: 8px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
 body {
     background-color: @backgroundColor;
     color: @textColor;
@@ -18,5 +26,32 @@ body {
 
     @media @breakpointMobile {
         max-width: 70%;
+    }
+}
+
+header{
+    padding: 24px;
+    .avatarProfile {
+        display: block;
+        margin: 0 auto 24px;
+        border-radius: 50%;
+    }   
+}
+
+.bioProfile {
+    text-align: center;
+    .bioNameProfile {
+        font-size: 16px;
+        .marginBottom8();
+
+    }
+    .bioSubtitleProfile {
+        font-size: 14px;
+        .marginBottom8();
+    }
+
+    .bioProfileDescription {
+        font-size: 14px;
+        opacity: 0.7;
     }
 }
