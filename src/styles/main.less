@@ -1,4 +1,4 @@
-@import 'variables.less';
+@import 'maps.less';
 @breakpointTablet: ~"(min-width:768px) and (max-width: 1023px)";
 @breakpointMobile: ~"(max-width: 767px)";
 .marginBottom8{
@@ -11,8 +11,8 @@
     font-family: 'Roboto', sans-serif;
 }
 body {
-    background-color: @backgroundColor;
-    color: @textColor;
+    background-color: #colors[backgroundColor];
+    color: #colors[textColor];
 }
 
 .container {
@@ -53,5 +53,23 @@ header{
     .bioProfileDescription {
         font-size: 14px;
         opacity: 0.7;
+    }
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: space-between;
+    max-width: 360px;
+    width: 100%;
+    margin: 0 auto;
+
+    li{
+        list-style: none;
+        img {
+            transition: all ease .3s;
+            &:hover {
+                transform: scale(1.3);
+            }
+        }
     }
 }

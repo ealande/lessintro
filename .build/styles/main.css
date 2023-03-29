@@ -8,7 +8,7 @@
   font-family: 'Roboto', sans-serif;
 }
 body {
-  background-color: #192a56;
+  background-color: #3f61b8;
   color: #f5f6fa;
 }
 .container {
@@ -48,4 +48,20 @@ header .avatarProfile {
 .bioProfile .bioProfileDescription {
   font-size: 14px;
   opacity: 0.7;
+}
+.socialLinks {
+  display: flex;
+  justify-content: space-between;
+  max-width: 360px;
+  width: 100%;
+  margin: 0 auto;
+}
+.socialLinks li {
+  list-style: none;
+}
+.socialLinks li img {
+  transition: all ease 0.3s;
+}
+.socialLinks li img:hover {
+  transform: scale(1.3);
 }
